@@ -1,0 +1,16 @@
+project_config:
+  name: devstack
+  image: 'Ubuntu 12.04 cloudimg amd64'
+  remote_user: ubuntu
+  flavor_name: m1.large
+  provision_scripts:
+    - provision.sh
+  sec_groups:
+    - icmp, -1, -1, 0.0.0.0/0
+    - tcp, 22, 22, 0.0.0.0/0
+    - tcp, 80, 80, 0.0.0.0/0
+    - tcp, 8770, 8770, 0.0.0.0/0
+    - tcp, 8774, 8774, 0.0.0.0/0
+    - tcp, 8775, 8775, 0.0.0.0/0
+    - tcp, 8776, 8776, 0.0.0.0/0
+    - tcp, 9292, 9292, 0.0.0.0/0
