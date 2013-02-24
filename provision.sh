@@ -13,15 +13,7 @@ sudo apt-get install -y git python-netaddr
 
 git clone https://github.com/openstack-dev/devstack.git #-b stable/essex
 
+ln -s ~/localrc ~/devstack/localrc
+
 cd devstack/
-
-cat<<LOCALRC | tee localrc
-FIXED_RANGE=192.168.2.0/24
-MYSQL_PASSWORD=secrete
-RABBIT_PASSWORD=secrete
-SERVICE_TOKEN=secrete
-SERVICE_PASSWORD=secrete
-ADMIN_PASSWORD=secrete
-LOCALRC
-
 ./stack.sh
