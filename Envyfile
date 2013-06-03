@@ -1,6 +1,6 @@
 project_config:
   name: devstack
-  image: 'Ubuntu 12.04 cloudimg amd64'
+  image: 'Ubuntu 12.04'
   remote_user: ubuntu
   flavor_name: m1.large
   files:
