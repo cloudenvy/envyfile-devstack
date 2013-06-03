@@ -2,7 +2,7 @@ project_config:
   name: devstack
   image: 'Ubuntu 12.04'
   remote_user: ubuntu
-  flavor_name: m1.large
+  flavor_name: n1.large
   files:
     localrc: '~'
   provision_scripts:
